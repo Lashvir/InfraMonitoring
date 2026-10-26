@@ -1,0 +1,23 @@
+[project]
+name = "inframonitoring"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Lashvir", email = "dimagax01@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.143.1",
+    "psutil>=7.2.2",
+    "psycopg[binary]>=3.3.6",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+inframonitoring = "inframonitoring:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"

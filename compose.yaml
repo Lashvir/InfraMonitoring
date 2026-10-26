@@ -1,0 +1,24 @@
+services:
+  db:
+    image: postgres:18
+
+    environment:
+      POSTGRES_DB: infra_monitoring
+      POSTGRES_USER: monitor
+      POSTGRES_PASSWORD: root
+
+    ports:
+      - "127.0.0.1:5433:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -h 127.0.0.1 -U monitor -d infra_monitoring"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+
+volumes:
+  postgres_data:
