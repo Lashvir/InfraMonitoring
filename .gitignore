@@ -8,3 +8,6 @@ wheels/
 .env
 # Virtual environments
 .venv
+# Files
+agent.json
+lhm_test.py

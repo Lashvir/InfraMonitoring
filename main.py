@@ -40,7 +40,7 @@ def register_machine(machine:MachineCreate):
         result=cur.fetchone()
     return result
 
-@app.post("/metrics/cpu")
+@app.post("/metrics/cpu",status_code=201)
 def handle_data(cpu_data:CpuMetricsCreate):
 
     with get_connection() as conn, conn.cursor(row_factory=dict_row) as cur:
@@ -52,8 +52,6 @@ def handle_data(cpu_data:CpuMetricsCreate):
             """,
             (cpu_data.machine_id,cpu_data.cpu_usage,cpu_data.cpu_temperature)
         )
-        result=cur.fetchone()
-    return result;
     #return {"Success":"it passed"}
 
 @app.get("/machines/{machine_id}/cpu/latest")
