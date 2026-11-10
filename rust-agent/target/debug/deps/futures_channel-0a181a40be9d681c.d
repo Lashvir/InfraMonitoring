@@ -1,9 +1,0 @@
-C:\Users\dimag\Documents\GitHub\InfraMonitoring\rust-agent\target\debug\deps\futures_channel-0a181a40be9d681c.d: C:\Users\dimag\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-channel-0.3.34\src\lib.rs C:\Users\dimag\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-channel-0.3.34\src\lock.rs C:\Users\dimag\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-channel-0.3.34\src\mpsc\mod.rs C:\Users\dimag\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-channel-0.3.34\src\mpsc\queue.rs C:\Users\dimag\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-channel-0.3.34\src\oneshot.rs
-
-C:\Users\dimag\Documents\GitHub\InfraMonitoring\rust-agent\target\debug\deps\libfutures_channel-0a181a40be9d681c.rmeta: C:\Users\dimag\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-channel-0.3.34\src\lib.rs C:\Users\dimag\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-channel-0.3.34\src\lock.rs C:\Users\dimag\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-channel-0.3.34\src\mpsc\mod.rs C:\Users\dimag\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-channel-0.3.34\src\mpsc\queue.rs C:\Users\dimag\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-channel-0.3.34\src\oneshot.rs
-
-C:\Users\dimag\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-channel-0.3.34\src\lib.rs:
-C:\Users\dimag\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-channel-0.3.34\src\lock.rs:
-C:\Users\dimag\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-channel-0.3.34\src\mpsc\mod.rs:
-C:\Users\dimag\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-channel-0.3.34\src\mpsc\queue.rs:
-C:\Users\dimag\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-channel-0.3.34\src\oneshot.rs:

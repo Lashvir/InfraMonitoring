@@ -1,8 +1,0 @@
-C:\Users\dimag\Documents\GitHub\InfraMonitoring\rust-agent\target\debug\deps\rustls_platform_verifier-b4da56d5119319e3.d: C:\Users\dimag\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rustls-platform-verifier-0.7.1\src\lib.rs C:\Users\dimag\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rustls-platform-verifier-0.7.1\src\verification\mod.rs C:\Users\dimag\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rustls-platform-verifier-0.7.1\src\verification\windows.rs C:\Users\dimag\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rustls-platform-verifier-0.7.1\src\../README.md
-
-C:\Users\dimag\Documents\GitHub\InfraMonitoring\rust-agent\target\debug\deps\librustls_platform_verifier-b4da56d5119319e3.rmeta: C:\Users\dimag\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rustls-platform-verifier-0.7.1\src\lib.rs C:\Users\dimag\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rustls-platform-verifier-0.7.1\src\verification\mod.rs C:\Users\dimag\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rustls-platform-verifier-0.7.1\src\verification\windows.rs C:\Users\dimag\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rustls-platform-verifier-0.7.1\src\../README.md
-
-C:\Users\dimag\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rustls-platform-verifier-0.7.1\src\lib.rs:
-C:\Users\dimag\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rustls-platform-verifier-0.7.1\src\verification\mod.rs:
-C:\Users\dimag\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rustls-platform-verifier-0.7.1\src\verification\windows.rs:
-C:\Users\dimag\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rustls-platform-verifier-0.7.1\src\../README.md:

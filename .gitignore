@@ -11,3 +11,6 @@ wheels/
 # Files
 agent.json
 lhm_test.py
+
+#Rust build artifacts
+rust-agent/target/
