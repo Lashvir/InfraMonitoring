@@ -8,7 +8,7 @@ from pydantic.main import BaseModel
 from starlette.exceptions import HTTPException
 
 from database import get_connection
-from monitoring.monitoring import monitoring_statistics
+#from monitoring.monitoring import monitoring_statistics
 
 app=FastAPI(title="InfraMonitoring", description="The backend for monitoring")
 
@@ -20,8 +20,10 @@ class CpuData(BaseModel):
 
 class CpuMetricsCreate(BaseModel):
     machine_id:UUID
-    cpu_usage:float=Field(ge=0,le=100)
-    cpu_temperature:float|None=None
+    load_avg_perc:float=Field(ge=0, le=100)
+    load_max_perc:float=Field(ge=0,le=100)
+    temp_avg:float|None=None
+    temp_max:float|None=None
 
 class MachineCreate(BaseModel):
     hostname:str=Field(min_length=1,description="Name of machine")
@@ -43,15 +45,17 @@ def register_machine(machine:MachineCreate):
 @app.post("/metrics/cpu",status_code=201)
 def handle_data(cpu_data:CpuMetricsCreate):
 
-    with get_connection() as conn, conn.cursor(row_factory=dict_row) as cur:
-        cur.execute(
-            """
-            INSERT INTO cpu_metrics (machine_id,cpu_usage,cpu_temperature)
-            VALUES (%s,%s,%s)
-            RETURNING entry_id,machine_id,cpu_usage,cpu_temperature,recorded_at
-            """,
-            (cpu_data.machine_id,cpu_data.cpu_usage,cpu_data.cpu_temperature)
-        )
+    return "received but posting to db not ready yet"
+    #WILL UNCOMMENT AND FIX AFTER I FIGURE OUT WHAT MORE I WANT TO ADD
+    # with get_connection() as conn, conn.cursor(row_factory=dict_row) as cur:
+    #     cur.execute(
+    #         """
+    #         INSERT INTO cpu_metrics (machine_id,cpu_usage,cpu_temperature)
+    #         VALUES (%s,%s,%s)
+    #         RETURNING entry_id,machine_id,cpu_usage,cpu_temperature,recorded_at
+    #         """,
+    #         (cpu_data.machine_id,cpu_data.cpu_usage,cpu_data.cpu_temperature)
+    #     )
     #return {"Success":"it passed"}
 
 @app.get("/machines/{machine_id}/cpu/latest")

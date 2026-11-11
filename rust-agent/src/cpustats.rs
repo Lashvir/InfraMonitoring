@@ -1,16 +1,22 @@
 use serde::Serialize;
 
+use crate::AgentConfig;
+
 // use sysinfo::MINIMUM_CPU_UPDATE_INTERVAL;
 
 #[derive(Debug, Serialize)]
 pub(crate) struct CpuMetrics {
+    machine_id: uuid::Uuid,
     load_avg_perc: Option<f32>,
     load_max_perc: Option<f32>,
     temp_avg: Option<f32>,
     temp_max: Option<f32>,
 }
 
-pub(crate) fn collect_cpu_stats(system: &mut sysinfo::System) -> CpuMetrics {
+pub(crate) fn collect_cpu_stats(
+    system: &mut sysinfo::System,
+    machine_id: &AgentConfig,
+) -> CpuMetrics {
     system.refresh_cpu_usage();
     let list_cpus = system.cpus();
     let mut max_load: Option<f32> = None;
@@ -30,6 +36,7 @@ pub(crate) fn collect_cpu_stats(system: &mut sysinfo::System) -> CpuMetrics {
     };
 
     CpuMetrics {
+        machine_id: machine_id.machine_id,
         load_avg_perc: avg_load,
         load_max_perc: max_load,
         temp_avg: None,
